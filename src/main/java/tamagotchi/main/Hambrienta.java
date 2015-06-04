@@ -10,7 +10,6 @@ public class Hambrienta implements Estado {
 
 	@Override
 	public void juga(Mascota mascota) {
-		mascota.incrementarFelicidad(2);
 		
 	}
 

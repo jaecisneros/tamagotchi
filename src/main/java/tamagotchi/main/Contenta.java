@@ -10,7 +10,7 @@ public class Contenta implements Estado {
 
 	@Override
 	public void juga(Mascota mascota) {
-		
+		mascota.incrementarFelicidad(2);
 	}
 
 	@Override

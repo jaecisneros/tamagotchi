@@ -37,5 +37,9 @@ public class Mascota {
 	public void setEstado(Estado estado){
 		this.estado = estado;
 	}
+	
+	public void setNivelContenta(int cantidad){
+		this.nivelContenta = cantidad;
+	}
 
 }

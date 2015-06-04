@@ -12,7 +12,7 @@ public class Aburrida implements Estado{
 	
 	@Override
 	public void come(Mascota mascota) {
-		if (tiempoAburrida.getMinute() > 80)
+		if (tiempoAburrida.minusMinutes(80).isAfter(LocalTime.now()))
 			mascota.setEstado(new Contenta());
 	}
 
@@ -26,6 +26,15 @@ public class Aburrida implements Estado{
 	public boolean podesJugar(Mascota mascota) {
 		return true;
 		
+	}
+
+	public void setTiempoAburrida(LocalTime minutos) {
+		this.tiempoAburrida = minutos;
+		
+	}
+
+	public LocalTime getMinutos() {
+		return tiempoAburrida;
 	}
 
 }
