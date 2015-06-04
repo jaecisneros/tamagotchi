@@ -1,3 +1,3 @@
 # tamagotchi
 
-Implementaciń del ejercicio tamagotchi + tests.
+Resolucion del ejercicio tamagotchi.
