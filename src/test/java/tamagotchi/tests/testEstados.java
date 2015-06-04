@@ -1,6 +1,9 @@
 package tamagotchi.tests;
 
+import junit.framework.Assert;
+
 import org.junit.Before;
+import org.junit.Test;
 
 import tamagotchi.main.Aburrida;
 import tamagotchi.main.Contenta;
@@ -19,6 +22,12 @@ public class testEstados {
 		hambrienta = new Hambrienta();
 		aburrida = new Aburrida();
 		contenta = new Contenta();
-		pepita = new Mascota(10, contenta);
+		pepita = new Mascota(10, aburrida);
+	}
+	
+	@Test
+	public void testAburridaAContentaTypeTest(){
+		pepita.juga();
+		Assert.assertEquals(pepita.getEstado().getClass(), Contenta.class);
 	}
 }
